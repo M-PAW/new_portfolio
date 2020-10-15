@@ -30,5 +30,23 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-react-remove-properties": "^0.3.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "jest-enzyme": "^7.1.2"
+  },
+  "babel": {
+    "env": {
+      "production": {
+        "plugins": [
+          ["react-remove-properties", {"properties": ["data-test"]}]
+        ]
+      }
+    },
+    "presets": [
+      "react-app"
+    ]
   }
 }
