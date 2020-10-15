@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" data-test="component-app">
       <h1>MPAW Porfolio Ver_3.1</h1>
     </div>
   );
