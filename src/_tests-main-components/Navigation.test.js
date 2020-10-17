@@ -13,7 +13,6 @@ Enzyme.configure({ adapter: new EnzymeAdapter() });
  * @param {object} props - component props specific to the setup
  * @param {object} state - initial state for the setup
  */
-
 const setup = (props={}, state=null) => {
     const wrapper = shallow(<Navigation {...props}/>)
     if ( state ) wrapper.setState(state)

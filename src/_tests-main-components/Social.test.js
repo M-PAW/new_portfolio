@@ -1,22 +1,23 @@
 import React from 'react';
-import Enzyme, { shallow, ShallowWrapper, shallowWrapper } from 'enzyme';
+
+import Enzyme, { shallow, ShallowWrapper } from 'enzyme';
 import EnzymeAdapter from 'enzyme-adapter-react-16';
 
-import Skills from '../main-components/Skills';
+import Social from '../main-components/Social';
 
 Enzyme.configure({ adapter: new EnzymeAdapter });
 
 /**
  * Function to create a ShallowWrapper
- * for skills component
- * @function setuo
+ * for social component
+ * @function setup
  * @param {object} props - component props
  * specific to the setup
  * @param {object} state - initial state for the setup
  */
 const setup = (props={}, state=null) => {
-    const wrapper = shallow(<Skills {...props}/>)
-    if ( state ) wrapper.setState(state)
+    const wrapper = shallow(<Social {...props} />)
+    if ( state ) wrapper.setState(state);
     return wrapper;
 }
 
@@ -33,9 +34,8 @@ const findByTestAttr = (wrapper, val) => {
     return wrapper.find(`[data-test="${val}"]`);
 }
 
-
-test('renders skills without an error', () => {
+test('renders social without error', () => {
     const wrapper = setup();
-    const skillsComponent = findByTestAttr(wrapper, "component-skills");
-    expect(skillsComponent.length).toBe(1);
+    const socialComponent = findByTestAttr(wrapper, "component-social");
+    expect(socialComponent.length).toBe(1);
 })
