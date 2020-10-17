@@ -1,11 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navigation from './main-components/Navigation';
+import Home from './main-components/Home';
+import Education from './main-components/Education';
 
 function App() {
   return (
     <div className="App" data-test="component-app">
-      <h1>MPAW Porfolio Ver_3.1</h1>
+      <Navigation />
+      <Home />
+      <Education />
     </div>
   );
 }
