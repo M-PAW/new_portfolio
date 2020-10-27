@@ -1,0 +1,20 @@
+
+.skills {
+    margin-top: 2rem;
+}
+
+.skills-container {
+    align-items: flex-start;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: -20px;
+
+}
+
+.skills-container p {
+    font-size: 9pt;
+    text-align: center;
+}
