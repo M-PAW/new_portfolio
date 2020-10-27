@@ -1,5 +1,5 @@
 import React from 'react';
-import Enzyme, { shallow, ShallowWrapper, shallowWrapper } from 'enzyme';
+import Enzyme, { shallow, ShallowWrapper } from 'enzyme';
 import EnzymeAdapter from 'enzyme-adapter-react-16';
 
 import Skills from '../main-components/Skills';
@@ -39,3 +39,30 @@ test('renders skills without an error', () => {
     const skillsComponent = findByTestAttr(wrapper, "component-skills");
     expect(skillsComponent.length).toBe(1);
 })
+
+test('renders skills-container without an error', () => {
+    const wrapper = setup();
+    const skillsContainer = findByTestAttr(wrapper, "container-skills");
+    expect(skillsContainer.length).toBe(1);
+})
+
+describe('tests for the frontend-container', () => {
+    let wrapper;
+
+    beforeEach(() => {
+        wrapper = setup();
+    
+    })
+
+    test('renders frontend-container without error', () => {
+        const frontendContainer = findByTestAttr(wrapper, "container-frontend")
+        expect(frontendContainer.length).toBe(1);
+    })
+    
+    // test('check that frontend-container has 8 children',() => {
+    //     const frontendChildren = findByTestAttr(wrapper.dive(),"container-frontend");
+    //     expect(frontendContainer.children.length).toBe(8);
+    // })
+
+})
+
