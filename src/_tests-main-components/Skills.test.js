@@ -46,7 +46,7 @@ test('renders skills-container without an error', () => {
     expect(skillsContainer.length).toBe(1);
 })
 
-describe('tests for the frontend-container', () => {
+describe('tests individual containers within skills-container', () => {
     let wrapper;
 
     beforeEach(() => {
@@ -55,14 +55,24 @@ describe('tests for the frontend-container', () => {
     })
 
     test('renders frontend-container without error', () => {
-        const frontendContainer = findByTestAttr(wrapper, "container-frontend")
+        const frontendContainer = findByTestAttr(wrapper, "container-frontend");
         expect(frontendContainer.length).toBe(1);
     })
     
-    // test('check that frontend-container has 8 children',() => {
-    //     const frontendChildren = findByTestAttr(wrapper.dive(),"container-frontend");
-    //     expect(frontendContainer.children.length).toBe(8);
-    // })
+    test('renders backend-container', () => {
+        const backendContainer = findByTestAttr(wrapper, "container-backend");
+        expect(backendContainer.length).toBe(1);
+    })
+
+    test('renders State & Test container', () => {
+        const StateTestContainer = findByTestAttr(wrapper, "container-StateTest");
+        expect(StateTestContainer.length).toBe(1);
+    })
+
+    test('renders languages container', () => {
+        const languagesContainer = findByTestAttr(wrapper, "container-languages");
+        expect(languagesContainer.length).toBe(1);
+    })
 
 })
 

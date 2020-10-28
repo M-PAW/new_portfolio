@@ -34,8 +34,14 @@ const findByTestAttr = (wrapper, val) => {
 }
 
 
-test(`renders navigation without an error`, () => {
+test(`renders navigation component without an error`, () => {
     const wrapper = setup();
     const navigationComponent = findByTestAttr(wrapper,"component-navigation");
     expect(navigationComponent.length).toBe(1);
+})
+
+test('renders navigation container without error', () => {
+    const wrapper = setup();
+    const navigationContainer = findByTestAttr(wrapper, "container-navigation");
+    expect(navigationContainer.length).toBe(1);
 })

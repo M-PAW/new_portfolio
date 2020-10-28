@@ -1,0 +1,67 @@
+
+.button-collapse {
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    float: right;
+    clear: both;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.button-collapse:hover {
+    background-color: lightgray;
+    color: gray;
+}
+
+.button-collapse:active {
+    background-color: white;
+    border: 1px ridge rgb(123, 123, 123);
+
+    color: gray;
+}
+
+.button-collapse hr {
+    background-color: black;
+    margin: 0.20rem auto;
+    padding: 0;
+    width: 30px;
+}
+
+.button-navigation {
+    border-radius: 1px;
+    text-align: center;
+    width: 100%;
+}
+
+.button-navigation:hover {
+    background-color: lightgray;
+}
+
+.button-navigation:active {
+    border-color: opx 2px solid black;
+    color: white;
+}
+
+.container-navigation div:nth-child(2) {
+    margin-top: 110px;
+}
+
+.container-navigation {
+    padding: 10px 0;
+}
+
+.container-navigation hr {
+    width: 25%;
+}
+
+.navigation {
+    background-color: gray;
+    height: 450px;
+    max-width: 175px;
+    width: 100%;
+}
+
+/************ Active Style ************/
+.active {
+    background-color: lightgrey;
+}
