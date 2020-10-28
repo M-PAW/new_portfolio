@@ -18,7 +18,7 @@ const Skills = () => {
                     <p>React-Bootstrap</p>
                     <p>Material-UI</p>
                 </div>
-                <div>
+                <div data-test="container-backend">
                     <h3>Backend</h3>
                     <p>NodeJS</p>
                     <p>Express</p>
@@ -26,7 +26,7 @@ const Skills = () => {
                     <p>SQLite3</p>
                     <p>PostgreSql</p>
                 </div>
-                <div>
+                <div data-test="container-StateTest">
                     <h3>State(A) & Testing(B)</h3>
                         <p>Context(A)</p>
                         <p>Custom Hooks(A)</p>
@@ -35,7 +35,7 @@ const Skills = () => {
                         <p>Jest(B)</p>
                         <p>Enzyme(B)</p>
                 </div>
-                <div>
+                <div data-test="container-languages">
                     <h3>Languages</h3>
                     <p>JavaScript</p>
                     <p>Python</p>
