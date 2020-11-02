@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 
+import { Link } from 'react-router-dom'
+
 import '../main-styles/navigation.css';
 
 const Navigation = () => {
@@ -14,7 +16,9 @@ const Navigation = () => {
                     <hr/>
                 </div>
 
-                <div className="button-navigation active">Home</div>
+                <div className="button-navigation active">
+                    Home
+                </div>
                 <hr />
                 <div className="button-navigation">Projects</div>
                 <hr />

@@ -7,7 +7,7 @@
     letter-spacing: 0.1rem;
     margin: 0 10%;
     position: fixed;
-    top: 10%;
+    /* top: 10%; */
     width: 80%
 }
 
@@ -63,4 +63,18 @@
 
 .mandarin {
     font-family: 'Ma Shan Zheng', cursive;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container {
+    width: 20%;
+}
+
+.router-container {
+    width: 80%;
 }
